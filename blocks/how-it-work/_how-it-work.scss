@@ -1,4 +1,5 @@
 @import '../../modules/variables';
+@import '../../mixins/circle.scss';
 
 .how-it-work {
     padding: 50px 20px 20px 20px;
@@ -155,8 +156,7 @@
             height: 185px;
             border-radius: 50%;
             position: absolute;
-            right: 0px;
-            top: 5px;   
+            @include circle('green', 'tablet');
         }
 
         &__circle_yellow {
@@ -167,8 +167,7 @@
             height: 138px;
             border-radius: 50%;
             position: absolute;
-            top: 210px;
-            right: 0;
+            @include circle('yellow', 'tablet')
         }
     }
 }
@@ -207,13 +206,11 @@
         }
 
         &__circle_green {
-            right: 433px;
-            top: 20px;
+            @include circle('green', 'desktop');
         }
 
         &__circle_yellow {
-            right: 381px;
-            top: 218px;
+            @include circle('yellow', 'desktop');
         }
 
         &__subtitle-n-text_bottom {
