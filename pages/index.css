@@ -688,13 +688,20 @@ body {
 .footer__information:last-of-type {
   margin-top: 0;
 }
+.footer__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .footer {
     padding: 120px 50px 50px;
     align-items: flex-start;
   }
   .footer__description {
-    display: flex;
+    align-items: normal;
+    flex-direction: row;
     gap: 100px;
   }
   .footer__information {
