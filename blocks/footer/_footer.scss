@@ -1,0 +1,131 @@
+@import '../../modules/variables';
+
+.footer {
+    background: $LightPurple;
+    padding: 60px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        width: 200px;
+        height: 200px;
+        background-image: url(../../images/soda.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: $FS23;
+        line-height: 33px;  
+        color: $White;
+        margin: 0 0 20px;
+    }
+
+    &__navigation {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__link {
+        font-size: $FS17;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        color: $White;
+        padding: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 3px;
+        }
+    }
+
+    &__link-point {
+        color: $White;
+        text-decoration: none;
+        transition: opacity .3s ease-in;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__copyright {
+        font-size: $FS14;
+        line-height: 15px;
+        letter-spacing: 0.3px;
+        color: $White;
+        margin: 0;
+    }
+
+    &__information {
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:last-of-type {
+            margin-top: 0;
+        }
+    }
+
+    &__description {
+        
+    }
+}
+
+@media (min-width: $screen-tablet) {
+    .footer {
+        padding: 120px 50px 50px;
+        align-items: flex-start;
+
+        &__description {
+            display: flex;
+            gap: 100px;
+        }
+
+        &__information {
+            margin: 0;
+            align-items: flex-start;
+        }
+
+        &__logo {
+            flex-shrink: 0;
+        }
+
+        &__information-n-copyright {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        &__navigation {
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .footer {
+        padding: 100px 150px;
+
+        &__logo {
+            width: 300px;
+            height: 300px;
+        }
+
+        &__description {
+            gap: 247px;
+        }
+
+        &__information-n-copyright {
+            gap: 145px;
+        }
+    }
+}

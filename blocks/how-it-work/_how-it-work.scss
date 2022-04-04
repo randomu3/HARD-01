@@ -1,0 +1,223 @@
+@import '../../modules/variables';
+
+.how-it-work {
+    padding: 50px 20px 20px 20px;
+
+    &__title {
+        font-weight: 500;
+        font-size: $FS20;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: $DarkBlue;
+        margin: 0 auto 50px;
+    }
+
+    &__tastes {
+        background: $Purple;
+        padding: 20px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: $FS20;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: $White;
+        margin: 0;
+    }
+
+    &__text {
+        font-size: $FS14;
+        line-height: 19px;
+        letter-spacing: 0.3px;
+        color: $WhiteOpacity;
+        margin: 15px 0 0 0;
+    }
+
+    &__image {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    &__structure {
+        background: $DarkPurple;
+        padding: 20px;
+    }
+
+    &__button {
+        font-size: $FS18;
+        background: $LightOrange;
+        width: 163px;
+        height: 55px;
+        margin-top: 60px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none;
+        border: none;
+        font-family: 'Inter', Arial, sans-serif;
+        transition: border .3s, border-radius .3s, box-sizing .3s;
+
+            &:hover {
+                border: 2px solid #1E3264;
+                box-sizing: border-box;
+                border-radius: 10px;
+            }
+    }
+
+    &__list {
+        margin: 60px 0 0 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__product {
+        font-weight: 700;
+        font-size: $FS22;
+        line-height: 22px;
+        padding: 0 0 20px 0;
+        margin: 0;
+        color: $White;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+        &:not(:first-of-type) {
+            margin: 20px 0 0 0;
+        }
+    }
+}
+
+@media (min-width: $screen-tablet) {
+    .how-it-work {
+        padding: 0 50px 50px 50px;
+
+        &__title {
+            margin: 120px auto;
+            font-size: $FS60;
+            line-height: 60px;
+        }
+
+        &__tastes {
+            padding: 60px;
+        }
+
+        &__subtitle {
+            font-weight: 600;
+            font-size: $FS52;
+            line-height: 48px;
+            display: flex;
+            align-items: flex-end;
+            color: $White;
+        }
+
+        &__text {
+            margin-top: 30px;
+            width: 386px;
+            white-space: pre;
+            font-size: $FS18;
+            line-height: 31px;
+            white-space: pre;
+        }
+
+        &__structure {
+            padding: 60px;
+        }
+
+        &__list {
+            margin-top: 100px;
+            width: 255px;
+        }
+
+        &__product {
+            font-size: $FS32;
+            line-height: 50px;
+            padding-bottom: 4px;
+
+            &:not(:first-of-type) {
+                margin-top: 30px;
+            }
+        }
+
+        &__button {
+            margin-top: 100px;
+        }
+
+        &__products {
+            position: relative;
+        }
+
+        &__circle_green {
+            background: $LightYellow;
+            border: 3px solid $Green;
+            box-sizing: border-box;
+            width: 185px;
+            height: 185px;
+            border-radius: 50%;
+            position: absolute;
+            right: 0px;
+            top: 5px;   
+        }
+
+        &__circle_yellow {
+            background: $LightOrange;
+            border: 3px solid $DarkBlue;
+            box-sizing: border-box;
+            width: 138px;
+            height: 138px;
+            border-radius: 50%;
+            position: absolute;
+            top: 210px;
+            right: 0;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .how-it-work {
+        padding-top: 120px;
+
+        &__title {
+            margin-top: 0;
+        }
+
+        &__tastes {
+            display: flex;
+            gap: 236px;
+            padding: 90px;
+        }
+
+        &__image {
+            margin: 0;
+        }
+
+        &__structure {
+            padding: 90px 100px;
+        }
+
+        &__products {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        &__list {
+            margin: 0;
+        }
+
+        &__circle_green {
+            right: 433px;
+            top: 20px;
+        }
+
+        &__circle_yellow {
+            right: 381px;
+            top: 218px;
+        }
+
+        &__subtitle-n-text_bottom {
+            position: absolute;
+        }
+    }
+}
