@@ -1,0 +1,30 @@
+@import '../../modules/variables';
+
+.run-line {
+    height: 64px;
+    background-color: $LightGreen;
+    display: table-cell;
+    vertical-align: middle;
+
+    &__text {
+        white-space: nowrap;
+        margin: 0;
+        font-weight: 700;
+        font-size: $FS20;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $Green;
+        margin-left: -96px;
+    }
+}
+
+@media (min-width: $screen-tablet) {
+    .run-line {
+        height: 76px;
+
+        &__text {
+            font-size: $FS30;
+            line-height: 36px;
+        }
+    }
+}

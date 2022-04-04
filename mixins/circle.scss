@@ -1,0 +1,20 @@
+@import '../modules/variables';
+
+@mixin circle($color, $screen) {
+    @if $color == 'green' and $screen == 'tablet' {
+        right: 0px;
+        top: 5px;
+    }
+    @if $color == 'yellow' and $screen == 'tablet' {
+        top: 210px;
+        right: 0;
+    }
+    @if $color == 'green' and $screen == 'desktop' {
+        right: 433px;
+        top: 20px;
+    }
+    @if $color == 'yellow' and $screen == 'desktop' {
+        right: 381px;
+        top: 218px;
+    }
+}

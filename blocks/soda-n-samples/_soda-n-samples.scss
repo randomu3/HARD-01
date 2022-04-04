@@ -1,0 +1,283 @@
+@import '../../modules/variables';
+
+.soda-n-samples {
+    padding: 0 20px;
+
+    &__title {
+        font-weight: 500;
+        font-size: $FS20;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.3px;    
+        color: $DarkBlue;
+        margin: 30px auto 50px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 339px;
+        background-image: url(../../images/mango.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__natural-products {
+        position: relative;
+    }
+
+    &__mango {
+        width: 125px;
+        height: 125px;
+        position: absolute;
+        background-image: url(../../images/AddYours.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        bottom: 45px;
+        left: -5px;
+    }
+
+    &__samples {
+        background: $LightGreen;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__description {
+        margin: 20px 20px 0;
+    }
+
+    &__container {
+        margin: 50px 10px 10px;
+        background: $Green;
+    }
+
+    &__title-form {
+        font-weight: 500;
+        font-size: $FS20;
+        line-height: 24px;    
+        color: $White;
+        margin: 0;
+    }
+
+    &__form {
+        margin: 40px 0 0 0;
+    }
+
+    &__title-input {
+        font-size: $FS14;
+        line-height: 31px;
+        letter-spacing: 0.3px;
+        color: $White;
+        margin: 0;
+    }
+
+    &__text {
+        font-size: $FS14;
+        line-height: 19px;
+        letter-spacing: 0.3px;    
+        color: $DarkBlue;
+        margin: 20px 0 0;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: $FS20;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: $DarkBlue;
+        margin: 0;
+    }
+
+    &__input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid $White;
+        padding: 0 0 13px;
+        font-weight: 600;
+        font-size: $FS14;
+        line-height: 17px;
+        letter-spacing: 0.3px;
+        color: $White;
+        width: 100%;
+        margin-bottom: 8px;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    &__container {
+        padding: 20px;
+    }
+
+    &__submit {
+        width: 220px;
+        height: 51px;
+        font-weight: 500;
+        font-size: $FS16;
+        line-height: 31px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: $White;
+        background: $PurpleSun;
+        border: none;
+        padding: 0;
+        margin: 60px 0 0;
+        transition: border 0.3s, border-radius 0.3s, box-sizing 0.3s;
+
+        &:hover {
+            border: 2px solid $LightYellow;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (min-width: $screen-tablet) {
+    .soda-n-samples {
+        padding: 0 50px;
+
+        &__title {
+            font-size: $FS60;
+            line-height: 67px;
+            margin: 70px auto 120px;
+            white-space: pre;
+        }
+
+        &__image {
+            width: 430px;
+            height: 520px;
+            margin: 0 auto;
+        }
+
+        &__mango {
+            bottom: 286px;
+            left: 34px;
+            width: 218px;
+            height: 218px;
+        }
+
+        &__title-form {
+            font-size: $FS32;
+            line-height: 40px;
+        }
+
+        &__subtitle {
+            font-size: $FS60;
+            line-height: 65px;
+        }
+
+        &__text {
+            font-size: $FS20;
+            line-height: 29px;
+            white-space: pre;
+            margin-top: 48px;
+        }
+
+        &__description {
+            margin: 60px 60px 0;
+        }
+
+        &__container {
+            margin: 100px 34px 34px;
+            padding: 24px 30px 30px;
+        }
+
+        &__submit {
+            width: 158px;
+            height: 55px;
+            font-size: $FS18;
+            margin-top: 90px;
+        }
+
+        &__title-input {
+            font-size: $FS17;
+        }
+
+        &__input {
+            font-size: $FS17;
+            padding-top: 17px; // относительно изменения margin - добавил здесь аналогично 4 пикселя, ибо это не указано в макете.
+            margin-bottom: 12px;
+        }
+
+        &__form {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .soda-n-samples {
+        padding: 0;
+
+        &__natural-products {
+            display: flex;
+            align-items: center;
+            padding: 20px 180px 0 154px;
+            justify-content: space-between;
+        }
+
+        &__mango {
+            bottom: 276px;
+            left: 700px;
+        }
+
+        &__title {
+            white-space: normal;
+            width: 460px;
+            text-align: left;
+            margin: 120px 0 190px;
+        }
+
+        &__image {
+            margin: 0;
+        }
+
+        &__text {
+            width: 457px;
+        }
+
+        &__samples {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 50px;
+            gap: 90px;
+        }
+
+        &__container {
+            margin: 0;
+            width: 100%;
+        }
+
+        &__description {
+            margin: 0 0 0 100px;
+        }
+
+        &__name-n-fam {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            gap: 13px;
+            margin: 0 0 12px;
+        }
+
+        &__input-name-n-input {
+            width: 100%;
+        }
+
+        &__input-fam-n-input {
+            width: 100%;
+        }
+
+        &__submit {
+            margin-top: 179px;
+        }
+        
+        &__input:last-child {
+            margin: 0;
+        }
+    }
+}
